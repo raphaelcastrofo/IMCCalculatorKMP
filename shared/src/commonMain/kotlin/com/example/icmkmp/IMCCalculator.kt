@@ -4,7 +4,7 @@ object IMCCalculator {
     fun calculatorIMC(weight: Double, height: Double): Double {
         return if (height>0) weight / (height * height) else 0.0
     }
-    fun cassifyIMC(imc: Double): String {
+    fun classifyIMC(imc: Double): String {
         return when {
             imc < 18.5 -> "ABAIXO DO PESO"
             imc in 18.5..24.9 -> "PESO NORMAL"
